@@ -86,7 +86,7 @@ function App() {
             {output.weather && (
               <Stat
                 Icon={getWeatherIcon(output.weather, statIconClassnames)}
-                stat={`${Math.round(output.weather.celsiusTemp)}°C`}
+                stat={`${Math.round(output.weather.fahrenheitTemp)}°F`}
                 threshold={weatherThresholds}
                 type="inline"
               />
